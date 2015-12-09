@@ -11,8 +11,10 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var boardView: UIView!
+    @IBOutlet weak var scoreLabel: UILabel!
     var player:Player?
     var game:Game?
+    var currentSpawnTime:Int? = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +33,8 @@ class ViewController: UIViewController {
         player!.drawCharacter(boardView, game: self.game!)
         listenerGesture()
         
-        
     }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -56,10 +58,19 @@ class ViewController: UIViewController {
     }
     
     func respondToSwipeGesture(gesture: UIGestureRecognizer) {
-        
-        
-        
+
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
+            
+            player?.score! += 1
+            self.currentSpawnTime? += 1
+            
+            if( self.currentSpawnTime == game?.spawnRate){
+                 self.currentSpawnTime? = 0
+            }
+            
+            print(self.currentSpawnTime)
+            
+            scoreLabel.text = String(player!.score)
             switch swipeGesture.direction {
             case UISwipeGestureRecognizerDirection.Right:
                 player!.moveCharacterRight(game!)
