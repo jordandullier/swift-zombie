@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		174497E51C181B7C0009A08D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174497E41C181B7C0009A08D /* AppDelegate.swift */; };
+		174497E71C181B7C0009A08D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174497E61C181B7C0009A08D /* ViewController.swift */; };
+		174497EA1C181B7C0009A08D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174497E81C181B7C0009A08D /* Main.storyboard */; };
+		174497EC1C181B7C0009A08D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 174497EB1C181B7C0009A08D /* Assets.xcassets */; };
+		174497EF1C181B7C0009A08D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174497ED1C181B7C0009A08D /* LaunchScreen.storyboard */; };
+		174497FA1C181B7C0009A08D /* ZombieEscapeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174497F91C181B7C0009A08D /* ZombieEscapeTests.swift */; };
+		174498051C181B7D0009A08D /* ZombieEscapeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174498041C181B7D0009A08D /* ZombieEscapeUITests.swift */; };
+		174498131C181BD60009A08D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174498121C181BD60009A08D /* Player.swift */; };
+		174498151C181CA90009A08D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174498141C181CA90009A08D /* Character.swift */; };
+		174498171C1822F10009A08D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174498161C1822F10009A08D /* Game.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		174497F61C181B7C0009A08D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 174497D91C181B7C0009A08D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 174497E01C181B7C0009A08D;
+			remoteInfo = ZombieEscape;
+		};
+		174498011C181B7C0009A08D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 174497D91C181B7C0009A08D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 174497E01C181B7C0009A08D;
+			remoteInfo = ZombieEscape;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		174497E11C181B7C0009A08D /* ZombieEscape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZombieEscape.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		174497E41C181B7C0009A08D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		174497E61C181B7C0009A08D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		174497E91C181B7C0009A08D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		174497EB1C181B7C0009A08D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		174497EE1C181B7C0009A08D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		174497F01C181B7C0009A08D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		174497F51C181B7C0009A08D /* ZombieEscapeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZombieEscapeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		174497F91C181B7C0009A08D /* ZombieEscapeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZombieEscapeTests.swift; sourceTree = "<group>"; };
+		174497FB1C181B7C0009A08D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		174498001C181B7C0009A08D /* ZombieEscapeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZombieEscapeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		174498041C181B7D0009A08D /* ZombieEscapeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZombieEscapeUITests.swift; sourceTree = "<group>"; };
+		174498061C181B7D0009A08D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		174498121C181BD60009A08D /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		174498141C181CA90009A08D /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		174498161C1822F10009A08D /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		174497DE1C181B7C0009A08D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		174497F21C181B7C0009A08D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		174497FD1C181B7C0009A08D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		174497D81C181B7C0009A08D = {
+			isa = PBXGroup;
+			children = (
+				174497E31C181B7C0009A08D /* ZombieEscape */,
+				174497F81C181B7C0009A08D /* ZombieEscapeTests */,
+				174498031C181B7D0009A08D /* ZombieEscapeUITests */,
+				174497E21C181B7C0009A08D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		174497E21C181B7C0009A08D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				174497E11C181B7C0009A08D /* ZombieEscape.app */,
+				174497F51C181B7C0009A08D /* ZombieEscapeTests.xctest */,
+				174498001C181B7C0009A08D /* ZombieEscapeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		174497E31C181B7C0009A08D /* ZombieEscape */ = {
+			isa = PBXGroup;
+			children = (
+				174497E41C181B7C0009A08D /* AppDelegate.swift */,
+				174497E61C181B7C0009A08D /* ViewController.swift */,
+				174498161C1822F10009A08D /* Game.swift */,
+				174497E81C181B7C0009A08D /* Main.storyboard */,
+				174497EB1C181B7C0009A08D /* Assets.xcassets */,
+				174497ED1C181B7C0009A08D /* LaunchScreen.storyboard */,
+				174497F01C181B7C0009A08D /* Info.plist */,
+				174498121C181BD60009A08D /* Player.swift */,
+				174498141C181CA90009A08D /* Character.swift */,
+			);
+			path = ZombieEscape;
+			sourceTree = "<group>";
+		};
+		174497F81C181B7C0009A08D /* ZombieEscapeTests */ = {
+			isa = PBXGroup;
+			children = (
+				174497F91C181B7C0009A08D /* ZombieEscapeTests.swift */,
+				174497FB1C181B7C0009A08D /* Info.plist */,
+			);
+			path = ZombieEscapeTests;
+			sourceTree = "<group>";
+		};
+		174498031C181B7D0009A08D /* ZombieEscapeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				174498041C181B7D0009A08D /* ZombieEscapeUITests.swift */,
+				174498061C181B7D0009A08D /* Info.plist */,
+			);
+			path = ZombieEscapeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		174497E01C181B7C0009A08D /* ZombieEscape */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 174498091C181B7D0009A08D /* Build configuration list for PBXNativeTarget "ZombieEscape" */;
+			buildPhases = (
+				174497DD1C181B7C0009A08D /* Sources */,
+				174497DE1C181B7C0009A08D /* Frameworks */,
+				174497DF1C181B7C0009A08D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZombieEscape;
+			productName = ZombieEscape;
+			productReference = 174497E11C181B7C0009A08D /* ZombieEscape.app */;
+			productType = "com.apple.product-type.application";
+		};
+		174497F41C181B7C0009A08D /* ZombieEscapeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1744980C1C181B7D0009A08D /* Build configuration list for PBXNativeTarget "ZombieEscapeTests" */;
+			buildPhases = (
+				174497F11C181B7C0009A08D /* Sources */,
+				174497F21C181B7C0009A08D /* Frameworks */,
+				174497F31C181B7C0009A08D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				174497F71C181B7C0009A08D /* PBXTargetDependency */,
+			);
+			name = ZombieEscapeTests;
+			productName = ZombieEscapeTests;
+			productReference = 174497F51C181B7C0009A08D /* ZombieEscapeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		174497FF1C181B7C0009A08D /* ZombieEscapeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1744980F1C181B7D0009A08D /* Build configuration list for PBXNativeTarget "ZombieEscapeUITests" */;
+			buildPhases = (
+				174497FC1C181B7C0009A08D /* Sources */,
+				174497FD1C181B7C0009A08D /* Frameworks */,
+				174497FE1C181B7C0009A08D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				174498021C181B7C0009A08D /* PBXTargetDependency */,
+			);
+			name = ZombieEscapeUITests;
+			productName = ZombieEscapeUITests;
+			productReference = 174498001C181B7C0009A08D /* ZombieEscapeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		174497D91C181B7C0009A08D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Jordan DULLIER";
+				TargetAttributes = {
+					174497E01C181B7C0009A08D = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					174497F41C181B7C0009A08D = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 174497E01C181B7C0009A08D;
+					};
+					174497FF1C181B7C0009A08D = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = 174497E01C181B7C0009A08D;
+					};
+				};
+			};
+			buildConfigurationList = 174497DC1C181B7C0009A08D /* Build configuration list for PBXProject "ZombieEscape" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 174497D81C181B7C0009A08D;
+			productRefGroup = 174497E21C181B7C0009A08D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				174497E01C181B7C0009A08D /* ZombieEscape */,
+				174497F41C181B7C0009A08D /* ZombieEscapeTests */,
+				174497FF1C181B7C0009A08D /* ZombieEscapeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		174497DF1C181B7C0009A08D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				174497EF1C181B7C0009A08D /* LaunchScreen.storyboard in Resources */,
+				174497EC1C181B7C0009A08D /* Assets.xcassets in Resources */,
+				174497EA1C181B7C0009A08D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		174497F31C181B7C0009A08D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		174497FE1C181B7C0009A08D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		174497DD1C181B7C0009A08D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				174497E71C181B7C0009A08D /* ViewController.swift in Sources */,
+				174498131C181BD60009A08D /* Player.swift in Sources */,
+				174497E51C181B7C0009A08D /* AppDelegate.swift in Sources */,
+				174498151C181CA90009A08D /* Character.swift in Sources */,
+				174498171C1822F10009A08D /* Game.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		174497F11C181B7C0009A08D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				174497FA1C181B7C0009A08D /* ZombieEscapeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		174497FC1C181B7C0009A08D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				174498051C181B7D0009A08D /* ZombieEscapeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		174497F71C181B7C0009A08D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 174497E01C181B7C0009A08D /* ZombieEscape */;
+			targetProxy = 174497F61C181B7C0009A08D /* PBXContainerItemProxy */;
+		};
+		174498021C181B7C0009A08D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 174497E01C181B7C0009A08D /* ZombieEscape */;
+			targetProxy = 174498011C181B7C0009A08D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		174497E81C181B7C0009A08D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				174497E91C181B7C0009A08D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		174497ED1C181B7C0009A08D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				174497EE1C181B7C0009A08D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		174498071C181B7D0009A08D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		174498081C181B7D0009A08D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1744980A1C181B7D0009A08D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZombieEscape/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = insset.ZombieEscape;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1744980B1C181B7D0009A08D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZombieEscape/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = insset.ZombieEscape;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1744980D1C181B7D0009A08D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZombieEscapeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = insset.ZombieEscapeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZombieEscape.app/ZombieEscape";
+			};
+			name = Debug;
+		};
+		1744980E1C181B7D0009A08D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZombieEscapeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = insset.ZombieEscapeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZombieEscape.app/ZombieEscape";
+			};
+			name = Release;
+		};
+		174498101C181B7D0009A08D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZombieEscapeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = insset.ZombieEscapeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZombieEscape;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		174498111C181B7D0009A08D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZombieEscapeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = insset.ZombieEscapeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZombieEscape;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		174497DC1C181B7C0009A08D /* Build configuration list for PBXProject "ZombieEscape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				174498071C181B7D0009A08D /* Debug */,
+				174498081C181B7D0009A08D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		174498091C181B7D0009A08D /* Build configuration list for PBXNativeTarget "ZombieEscape" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1744980A1C181B7D0009A08D /* Debug */,
+				1744980B1C181B7D0009A08D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1744980C1C181B7D0009A08D /* Build configuration list for PBXNativeTarget "ZombieEscapeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1744980D1C181B7D0009A08D /* Debug */,
+				1744980E1C181B7D0009A08D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1744980F1C181B7D0009A08D /* Build configuration list for PBXNativeTarget "ZombieEscapeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				174498101C181B7D0009A08D /* Debug */,
+				174498111C181B7D0009A08D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 174497D91C181B7C0009A08D /* Project object */;
+}
