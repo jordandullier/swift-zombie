@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1737C1741C1878E10026A203 /* YoloColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737C1731C1878E10026A203 /* YoloColor.swift */; };
 		174497E51C181B7C0009A08D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174497E41C181B7C0009A08D /* AppDelegate.swift */; };
 		174497E71C181B7C0009A08D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174497E61C181B7C0009A08D /* ViewController.swift */; };
 		174497EA1C181B7C0009A08D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 174497E81C181B7C0009A08D /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 		174498131C181BD60009A08D /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174498121C181BD60009A08D /* Player.swift */; };
 		174498151C181CA90009A08D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174498141C181CA90009A08D /* Character.swift */; };
 		174498171C1822F10009A08D /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174498161C1822F10009A08D /* Game.swift */; };
+		174498191C18755E0009A08D /* Zombie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174498181C18755E0009A08D /* Zombie.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1737C1731C1878E10026A203 /* YoloColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoloColor.swift; sourceTree = "<group>"; };
 		174497E11C181B7C0009A08D /* ZombieEscape.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZombieEscape.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		174497E41C181B7C0009A08D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		174497E61C181B7C0009A08D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -53,6 +56,7 @@
 		174498121C181BD60009A08D /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		174498141C181CA90009A08D /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		174498161C1822F10009A08D /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		174498181C18755E0009A08D /* Zombie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Zombie.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 		174497D81C181B7C0009A08D = {
 			isa = PBXGroup;
 			children = (
+				1737C1731C1878E10026A203 /* YoloColor.swift */,
 				174497E31C181B7C0009A08D /* ZombieEscape */,
 				174497F81C181B7C0009A08D /* ZombieEscapeTests */,
 				174498031C181B7D0009A08D /* ZombieEscapeUITests */,
@@ -112,6 +117,7 @@
 				174497F01C181B7C0009A08D /* Info.plist */,
 				174498121C181BD60009A08D /* Player.swift */,
 				174498141C181CA90009A08D /* Character.swift */,
+				174498181C18755E0009A08D /* Zombie.swift */,
 			);
 			path = ZombieEscape;
 			sourceTree = "<group>";
@@ -268,6 +274,8 @@
 				174497E71C181B7C0009A08D /* ViewController.swift in Sources */,
 				174498131C181BD60009A08D /* Player.swift in Sources */,
 				174497E51C181B7C0009A08D /* AppDelegate.swift in Sources */,
+				1737C1741C1878E10026A203 /* YoloColor.swift in Sources */,
+				174498191C18755E0009A08D /* Zombie.swift in Sources */,
 				174498151C181CA90009A08D /* Character.swift in Sources */,
 				174498171C1822F10009A08D /* Game.swift in Sources */,
 			);
@@ -494,6 +502,7 @@
 				1744980B1C181B7D0009A08D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1744980C1C181B7D0009A08D /* Build configuration list for PBXNativeTarget "ZombieEscapeTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +511,7 @@
 				1744980E1C181B7D0009A08D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1744980F1C181B7D0009A08D /* Build configuration list for PBXNativeTarget "ZombieEscapeUITests" */ = {
 			isa = XCConfigurationList;
@@ -510,6 +520,7 @@
 				174498111C181B7D0009A08D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

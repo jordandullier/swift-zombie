@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var boardView: UIView!
     @IBOutlet weak var scoreLabel: UILabel!
     var player:Player?
+    var zombies:[Zombie] = []
     var game:Game?
     var currentSpawnTime:Int? = 0
     
@@ -66,6 +67,8 @@ class ViewController: UIViewController {
             
             if( self.currentSpawnTime == game?.spawnRate){
                  self.currentSpawnTime? = 0
+                let zombie:Zombie = Zombie(xPosition: 10, yPosition: 2)
+                zombie.drawCharacter(boardView, game: game!)
             }
             
             print(self.currentSpawnTime)

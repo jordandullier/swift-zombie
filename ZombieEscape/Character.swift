@@ -29,7 +29,7 @@ class Character{
        
         var rectCharacter:CGRect = CGRect(x: positionX, y: positionY , width: game.widthCell!, height: game.heigthCell!)
         self.subview = UIView(frame: rectCharacter)
-        self.subview.backgroundColor = UIColor.redColor()
+        self.subview.backgroundColor = UIColor(hexString: self.color)
         view.addSubview(self.subview)
     }
     
