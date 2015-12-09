@@ -64,6 +64,8 @@ class ViewController: UIViewController {
 
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             
+            player?.subview.backgroundColor = UIColor(hexString: "#444444")
+            
             player?.score! += 1
             self.currentSpawnTime? += 1
             
@@ -110,8 +112,9 @@ class ViewController: UIViewController {
                     self.lifeLabel.text = String(player!.health!)
                     zm.subview.removeFromSuperview()
                     zombies.removeAtIndex(index)
+                    player?.subview.backgroundColor = UIColor.redColor()
                 }
-                 index += 1;
+                index += 1;
                 
             }
         }
