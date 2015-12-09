@@ -11,9 +11,11 @@ import MapKit
 
 class Zombie:Character{
     let colorZombie:String = "#BBBBBB"
+    var isActive:Bool?
     
     init(xPosition: Int, yPosition: Int) {
         super.init(xPosition: xPosition, yPosition: yPosition, color: colorZombie)
+        self.isActive = true;
     }
     
 }

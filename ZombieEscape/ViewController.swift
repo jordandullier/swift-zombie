@@ -30,7 +30,7 @@ class ViewController: UIViewController {
         boardView.layer.borderColor = UIColor.blackColor().CGColor
 
         self.player = Player(health: 10, xPosition: 3, yPosition: 6, name: "myPlayer")
-        self.game = Game(sizeX:12, sizeY: 16, startPlayerHealth: 4, spawnRate: 4)
+        self.game = Game(sizeX:12, sizeY: 16, startPlayerHealth: 4, spawnRate: 5)
         self.game!.calculateSizeCell(widthScreen, heigthScreen: heightScreen)
         self.lifeLabel.text = String(player!.health!)
         player!.drawCharacter(boardView, game: self.game!)
@@ -64,7 +64,7 @@ class ViewController: UIViewController {
 
         if let swipeGesture = gesture as? UISwipeGestureRecognizer {
             
-            player?.subview.backgroundColor = UIColor(hexString: "#444444")
+            player?.subview.backgroundColor = UIColor(hexString: self.player!.color)
             
             player?.score! += 1
             self.currentSpawnTime? += 1
@@ -75,8 +75,6 @@ class ViewController: UIViewController {
                 zombie.drawCharacter(boardView, game: game!)
                 self.zombies.append(zombie)
             }
-            
-            
             
             scoreLabel.text = String(player!.score)
             switch swipeGesture.direction {
@@ -96,8 +94,15 @@ class ViewController: UIViewController {
             
             for zm in zombies{
                 
-                
                 var randomNum:Int = randomNumber(1...4)
+                
+                if(zm.xPosition == player?.xPosition && zm.yPosition == player?.yPosition && zm.isActive == true){
+                    player?.health! -= 1
+                    self.lifeLabel.text = String(player!.health!)
+                    zm.subview.removeFromSuperview()
+                    zm.isActive = false
+                    player?.subview.backgroundColor = UIColor.redColor()
+                }
                 
                 switch(randomNum){
                 case 1: zm.moveCharacterDown(game!)
@@ -107,11 +112,11 @@ class ViewController: UIViewController {
                 default: break
                 }
                 
-                if(zm.xPosition == player?.xPosition && zm.yPosition == player?.yPosition){
+                if(zm.xPosition == player?.xPosition && zm.yPosition == player?.yPosition && zm.isActive == true){
                     player?.health! -= 1
                     self.lifeLabel.text = String(player!.health!)
                     zm.subview.removeFromSuperview()
-                    zombies.removeAtIndex(index)
+                    zm.isActive = false
                     player?.subview.backgroundColor = UIColor.redColor()
                 }
                 index += 1;
